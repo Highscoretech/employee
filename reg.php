@@ -1,5 +1,5 @@
 <?php
-require("herokudb.php");
+require("config.php");
 if (isset($_POST['submit'])) {
 
 
