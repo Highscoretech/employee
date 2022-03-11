@@ -22,13 +22,12 @@ $app = $_REQUEST['app'];
 $link = $_REQUEST['link'];
 $ID = strtoupper(bin2hex(random_bytes(4)));
 
-echo $bank_name;
 
 	
 	$sql = "INSERT INTO `employee` VALUES ('$ID','$first_name',
 	'$last_name','$email','$sex','$DOB','$phone','$exp','$state','$city','$country', '$bank_name','$acc_num','$link','$app', Now()) ";
 	if(mysqli_query($conn, $sql)){
-		echo "successfully";
+		echo "Form submitted successfully";
 	}else{
 		echo "something went wrong";
 	}
